@@ -1,0 +1,99 @@
+.slicknav_menu,
+.mobile-entry-header {
+	display:none;
+	padding: 0 !important;
+}
+
+@media (max-width: $sm) {
+  /* SlickNav Support */
+  #access .menu-slick {
+    display: none;
+  }
+
+  .slicknav_menu .slicknav_icon-bar {
+    background-color: $white;
+  }
+
+  .slicknav_nav {
+    background: #fff;
+  }
+
+  .slicknav_btn {
+    background-color: transparent;
+    float: right;
+    margin: 3px 1rem 5px 0;
+    padding: 15px;
+  }
+
+  .stuck .slicknav_btn {
+    margin: 3px 1rem 3px 15px;
+  }
+
+  .slicknav_icon-bar {
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+
+  .slicknav_open .slicknav_icon-bar {
+    position: relative;
+  }
+
+  .slicknav_open .slicknav_icon-bar:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 7px;
+  }
+
+  .slicknav_open .slicknav_icon-bar:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .slicknav_open .slicknav_icon-bar:nth-child(3) {
+    opacity: 0;
+  }
+
+  .slicknav_menu {
+    background: transparent;
+    display: block;
+  }
+
+  .stuck .slicknav_menu {
+    display: block;
+  }
+
+  ul.slicknav_nav {
+    background: $white;
+    text-align: left;
+    margin-top: 50px;
+  }
+
+  .slicknav_menu .slicknav_icon-bar {
+    display: block;
+    width: 28px;
+    height: 4px;
+    border-radius: 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+
+  .slicknav_nav .slicknav_row,
+  .slicknav_nav a {
+    padding: 10px;
+  }
+
+  .slicknav_nav a {
+    color: $theme-main-color;
+  }
+
+  .slicknav_nav .slicknav_row:hover,
+  .slicknav_nav a:hover {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    background: $theme-accent-color;
+    color: $white;
+  }
+  /* 	End Slick Nav Support */
+}

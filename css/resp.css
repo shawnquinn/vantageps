@@ -1,0 +1,847 @@
+/****************************************************************/
+/****************************************************************/
+/*** Responsive Support ***/
+/****************************************************************/
+/****************************************************************/
+
+.slicknav_menu,
+.mobile-entry-header {
+	display:none;
+	padding: 0 !important;
+}
+
+/****************************************************************/
+/*** Overs - Progressive Enhancement ***/
+/****************************************************************/
+
+/* Above 1920 */
+@media only screen and (min-width : 1920px) {
+	.bx-slider li#one,
+	.bx-slider li#two {
+		background-position: 0 100%;
+	}
+
+	#testimonials {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+}
+
+/* Extra Large Devices, Wide Screens OVER 1200px */
+@media only screen and (min-width : 1560px) {
+/*
+	.container {
+		width: 1495px;
+	}
+*/
+}
+
+/****************************************************************/
+/*** Unders - Graceful Degradation ***/
+/****************************************************************/
+
+/* Extra Large Devices, Wide Screens UNDER 1560 */
+@media only screen and (max-width : 1560px) {
+	.home .slider li h2 {
+		font-size: 100px;
+	}
+
+	.top .numbers a span {
+		display: block;
+	}
+
+	section.service-menus .cols a .box h4 {
+		font-size: 26px;
+	}
+
+}
+
+@media only screen and (max-width : 1545px) {
+	.sf-menu a {
+		font-size: 14px;
+	}
+	
+	section.contact .contact-info h3 {
+		font-size: 42px;
+	}
+	
+	section.contact .contact-info p,
+	section.contact .contact-info p a {
+		font-size: 20px;
+	}
+	
+	.contact .social-icons li a {
+		padding: 14px;
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width : 1366px) {
+	.procedure-menu .featured-menu li {
+		margin: 0.75rem 0;
+	}
+	
+	.procedure-menu .featured-menu li a {
+		font-size: 16px;
+	}
+}
+
+/* Large Devices, Wide Screens under 1200px */
+@media only screen and (max-width : 1199px) {
+
+	.slider .boxed h4 {
+		font-size: 22px;
+	}
+	
+	section.contact .contact-info {
+		position: relative;
+	}
+	
+	section.call-to-actions .cta a .box h4 {
+		font-size: 18px;
+		letter-spacing: 0;
+	}
+	
+	section.call-to-actions .cta a:hover .box h4 {
+		letter-spacing: 1px;
+	}
+	
+	section.call-to-actions .cta a .box h4
+	
+	.procedure-menu .featured-menu li {
+		margin: 1rem 0;
+	}
+	
+	.procedure-menu .featured-menu li a {
+		font-size: 14px;
+	}
+
+	header .social-icons li a {
+		font-size: 20px;
+		padding: 10px;
+	}
+
+	section.service-menus .box .box-inner h3 {
+		font-size: 18px;
+	}
+
+	section.service-menus .box .service-menu li a,
+	#contact-items a,
+	header a.btn-primary {
+		font-size: 14px;
+	}
+
+	.sf-menu a {
+		font-size: 13px;
+		margin: 0 0.25rem
+	}
+
+	section.service-menus .box .service-menu {
+		padding: 1rem 3rem;
+	}
+
+	section.meet img.doc {
+		margin-top: 10rem !important;
+	}
+
+	#secondary .widget h3::after {
+		position: relative;
+		margin-left: 0;
+	}
+
+	#navigation-logo .social p {
+		font-size: 16px;
+	}
+
+	.container .social-icons a {
+		font-size: 14px;
+		padding: 7px;
+	}
+
+	.bottom #footer-4 .col-lg-6:nth-child(1) {
+	    border-bottom: 2px solid #aeaeae;
+	    border-right: 0;
+	    margin-bottom: 1em;
+	    padding-bottom: 1em;
+	}
+
+	.top .numbers a, .top .location a {
+		font-size: 16px;
+	}
+
+	.score-text {
+		padding-top: 10%;
+	}
+
+	.score-text img.ico {
+		margin-bottom: 1rem;
+	}
+
+	.score-text h3 {
+		font-size: 16px;
+	}
+
+	.score-text p {
+		font-size: 16px;
+	}
+
+	.home #primary h2 {
+		font-size: 30px;
+	}
+
+
+	section.ctas.two a h5{
+		font-size: 20px;
+	}
+
+	section.service-menus .cols a .box h4 {
+		font-size: 18px;
+	}
+
+}
+
+
+
+/* Tablets and other devices Below 1024 */
+@media only screen and (max-width : 1024px) {
+
+
+	.float-box {
+		display: none;
+	}
+
+	section.contact img.alignleft {
+		margin: 0 auto;
+		float: none;
+		display: block;
+	}
+
+	#secondary .widget h3 {
+		font-size: 1.5rem;
+	}
+
+	.bottom p.address,
+	.footer-copyright {
+		text-align: center;
+	}
+
+	#footer-info .social-icons li {
+		float: none;
+	}
+
+	/* SlickNav Support */
+	#access .menu-slick {
+		display:none;
+	}
+
+	.slicknav_menu .slicknav_icon-bar {
+	    background-color: #7D8589;
+	}
+
+	.slicknav_nav {
+		background: #fff;
+	}
+
+	.slicknav_btn {
+		background-color: transparent;
+		float: right;
+		margin: 3px 1rem 5px 0px;
+		padding: 15px;
+	}
+
+	.stuck .slicknav_btn {
+		margin: 3px 1rem 3px 15px;
+	}
+
+	.slicknav_icon-bar {
+		-webkit-transition: 	all 0.2s linear;
+		transition: 			all 0.2s linear;
+	}
+
+	.slicknav_open .slicknav_icon-bar {
+		position: relative;
+	}
+
+	.slicknav_open .slicknav_icon-bar:nth-child(1) {
+		-webkit-transform: rotate(45deg);
+		        transform: rotate(45deg);
+		top: 7px;
+	}
+
+	.slicknav_open .slicknav_icon-bar:nth-child(2) {
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+	}
+
+	.slicknav_open .slicknav_icon-bar:nth-child(3) {
+		opacity: 0;
+	}
+
+	.slicknav_menu {
+		background: transparent;
+		display:block;
+	}
+
+	.stuck .slicknav_menu {
+		display:block;
+	}
+
+	ul.slicknav_nav {
+		background: #333;
+		text-align: left;
+		margin-top: 50px;
+	}
+
+	.slicknav_menu .slicknav_icon-bar {
+	    display: block;
+	    width: 28px;
+	    height: 4px;
+	    border-radius: 			0;
+	    box-shadow: 			none;
+	    -moz-box-shadow: 		none;
+	    -webkit-box-shadow: 	none;
+	}
+
+	.slicknav_nav .slicknav_row, .slicknav_nav a {
+		padding: 10px;
+	}
+
+	.slicknav_nav .slicknav_row:hover,
+	.slicknav_nav a:hover {
+	    border-radius: 			0;
+	    -moz-border-radius: 	0;
+	    -webkit-border-radius: 	0;
+	    background: #ccc;
+	    color: #fff;
+	}
+	/* 	End Slick Nav Support */
+
+
+}
+
+/* Medium Devices, Desktops under 992px */
+@media only screen and (max-width : 991px) {
+	#header .contact {
+		margin: 0;
+	}
+	
+
+	section.meet img.doc {
+	    margin-top: 1.5rem !important;
+	    margin-bottom: 1.5rem;
+	}
+
+	.home .slider .boxed .border {
+		border: 0;
+	}
+
+	section.testimonials img {
+		position: relative;
+		top: 0;
+	}
+
+	section.testimonials .bx-slider-reviews li .cols {
+		margin: 2rem 0;
+	}
+
+	section.testimonials .bx-wrapper .bx-next {
+		right: 0;
+	}
+
+	section.testimonials .bx-controls-direction {
+		bottom: 80%;
+	}
+
+	section.meet .container,
+	section.testimonials .container {
+		overflow: hidden;
+	}
+
+	.home #primary p {
+		padding: 1rem 0;
+	}
+
+	#navigation-logo {
+		padding: 1rem 0;
+	}
+
+	#navigation-logo .social,
+	#header .contact {
+		padding: 0.5rem 0;
+	}
+
+	#access {
+		padding-top: 0;
+	}
+
+	.sf-menu a,
+	.stuck .sf-menu a {
+		font-size: 18px;
+		padding: 0 10px;
+	}
+
+	.circle {
+		max-width: 55%;
+		margin: 1em auto;
+	}
+
+	.score-text {
+		padding-top: 20%;
+	}
+
+	section.testimonials .bx-slider-reviews li {
+		padding: 0 10%;
+	}
+
+
+	section.service-menus,
+	section.service-ctas {
+		position: relative;
+	}
+
+	section.service-ctas::before {
+		content: '';
+		background: rgba(255, 255, 255, 0.65);
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 99;
+	}
+
+	section.service-menus .container,
+	section.service-ctas .container {
+		position: relative;
+		z-index: 999;
+	}
+
+	.top .numbers,
+	.top .location,
+	.container .social-icons,
+	section.contact h3,
+	.sf-menu,
+	section.contact p,
+	section.contact a,
+	.top .numbers:first-child,
+	#navigation-logo .social, #header .contact,
+	.home #primary h1,
+	.home #primary h2,
+	.home #primary h1, .service-menus h2, section.about h2, section.contact h2, section.service-ctas h2,
+	header #top-bar p {
+		text-align: center;
+	}
+
+	header #top-bar {
+		padding: 1rem 0;
+	}
+
+	header #top-bar p {
+		padding-bottom: 1rem;
+	}
+
+	.home #primary h1::after,
+	.service-menus h2::after,
+	.section.about::after,
+	section.service-ctas h2::after {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	section.home-content .container,
+	section.about .container {
+    		background-position: center center;
+    		background-size: 70%;
+	}
+
+	.bottom h4 {
+		font-size: 18px;
+	}
+
+	#searchform {
+		float: none;
+		margin: 15px auto;
+		display: block;
+	}
+
+	#primary,
+	#secondary,
+	#footer-2 #footer-nav li {
+		width: 100%;
+	}
+
+	#footer-info .social-icons {
+		margin-top: 1rem;
+	}
+
+	section.meet-doc h2 {
+		position: relative;
+		right: 0;
+		top: 0;
+		text-align: center;
+	}
+
+	#footer-info .social-icons li {
+		width: auto;
+		margin: 0.25rem;
+	}
+
+	.home #primary h2 span {
+		display: inline-block;
+	}
+
+	section.about h4,
+	section.about h4 span {
+		font-size: 20px;
+	}
+
+	section.meet-doc::before {
+		width: 100%;
+	}
+
+	section.contact h3 {
+		top: 0;
+		padding: 0;
+		left: 0;
+		margin: 0;
+		position: relative;
+
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+		-webkit-writing-mode: horizontal-tb;
+		-ms-writing-mode: horizontal-tb;
+		writing-mode: horizontal-tb;
+	}
+
+	section.review blockquote {
+		padding: 0 2rem 2rem 2rem;
+	}
+	
+	section.contact .contact-info {
+		padding: 3rem 1rem;
+	}
+
+}
+
+
+/* Below 768 */
+@media only screen and (max-width : 767px) {
+	
+	#main-nav {
+		padding: 0;
+	}
+
+	section.contact {
+    	padding: 4rem 0 0 0;
+    		
+	}
+	
+	section.home-content #primary h1,
+	.featured-title {
+		font-size: 30px;
+	}
+	
+	section.home-content #primary h1 span,
+	.featured-title span {
+		font-size: 22px;
+	}
+	
+	section.call-to-actions .container {
+		max-width: 100%;
+		width: 100%;
+	}
+	
+	section.call-to-actions .cta a .box h4 {
+		font-size: 14px;
+		letter-spacing: 0;
+		top: 1rem;
+	}
+	
+	section.call-to-actions .cta a:hover .box h4 {
+		letter-spacing: 0;
+	}
+
+
+	.home .slider li .row {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	#contact-items a {
+		padding: 0.5rem 0;
+	}
+
+	section.testimonials .bx-slider-reviews blockquote {
+		padding: 0;
+	}
+
+	#header .social,
+	#header #logo,
+	#header .numbers,
+	section.meet h3,
+	section.contact h3,
+	.contact-header p,
+	#footer-nav li,
+	.bottom h4,
+	section.contact-header h2,
+	.bottom address,
+	#footer-info .social-icons,
+	section.about .list ul,
+	#footer-nav,
+	section.welcome h4,
+	section.meet h4,
+	.contact .container .social-icons  {
+		text-align: center;
+	}
+
+
+	section.about .list {
+		border: 0;
+	}
+
+	section.contact .col {
+		border: 0;
+	}
+
+	section.contact .col:nth-child(1) {
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+	}
+
+	section.contact-header h2 {
+		font-size: 8vw;
+	}
+
+	#header .social,
+	#header .numbers {
+		width: 100%;
+	}
+
+	.top .numbers {
+		margin: 15px 0;
+	}
+
+	.numbers a {
+		display: inline-block;
+	}
+
+	a.btn {
+		display: block;
+		width: 100%;
+	}
+
+	.home .slider li h2 {
+		font-size: 48px;
+		text-align: center;
+		margin-bottom: 1rem;
+		margin-top: 3rem;
+	}
+
+	blockquote {
+		font-size: 18px;
+	}
+
+	.score-text h3 {
+		font-size: 3.5vw;
+	}
+
+	.bx-slider li#one {
+		background-position: 70% top;
+	}
+
+
+	.home .slider li p {
+		font-size: 16px;
+	}
+
+	.home .slider .boxed h2,
+	.home .slider .boxed h2 span {
+		font-size: 42px;
+	}
+
+	.home .slider, .bx-slider, .bx-slider li, .bx-wrapper {
+/* 		height: auto; */
+	}
+
+	.logos-desktop,
+	.slider .box-holder {
+		display: none;
+	}
+
+	section.reviews .quote {
+		margin: 0;
+	}
+
+	section.testimonials .bx-slider-reviews blockquote,
+	section.testimonials .bx-slider-reviews #title,
+	section.testimonials .bx-slider-reviews #author {
+		font-size: 18px;
+	}
+
+
+	section.service-menus .cols a .box h4 {
+		font-size: 16px;
+		left: 1rem;
+	}
+	
+	.home .slider,
+	.bg-container {
+		margin-top: 0;
+	}
+}
+
+
+/* Below 600 Mobile App Breakpoint */
+@media only screen and (max-width : 600px) {
+
+	.home .slider {
+		padding: 15rem 0;
+	}
+
+	h1.knockout-text-one {
+		font-size: 28px;
+	}
+
+	.bg-container {
+		height: auto;
+	}
+
+	#logo {
+		float: none;
+		margin: 0 auto;
+		top: 0;
+		width: 100%;
+	}
+
+
+	section.reviews h2,
+	section.media-gallery h2 {
+		font-size: 1.5rem;
+	}
+
+	.home #primary h1,
+	#primary h1.entry-title,
+	section.contact h3,
+	.banner h2 {
+		font-size: 3rem;
+		text-align: center;
+	}
+
+	.entry-title {
+		font-size: 24px;
+	}
+
+	.alignleft,
+	.alignright {
+		margin: 0 auto;
+		display: block;
+		float: none;
+	}
+
+	#footer-1,
+	#footer-2 {
+		display: none;
+	}
+
+	#footer .col-1-4 {
+		width: 100%;
+		margin: 2% 0;
+	}
+
+	.col-1-4,
+	.col-1-2 {
+		width: 100%;
+		margin: 2% 0;
+	}
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+	
+	section.call-to-actions .cta {
+		margin: 2rem 0;
+		padding: 0 6rem;
+	}
+	
+	.social-icons li {
+		padding: 0;
+	}
+	
+	.home .slider, .bx-slider, .bx-slider li, .bx-wrapper {
+	    height: 350px;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 1.75rem;
+	}
+
+	.bg-container .entry-title {
+		font-weight: 400;
+	}
+
+	section.about p {
+		text-align: center;
+		margin: 1rem 0 2rem 0;
+	}
+
+	header #top-bar p {
+		font-size: 14px;
+	}
+
+	.home .slider .boxed h2, .home .slider .boxed h2 span {
+	    font-size: 30px;
+	    line-height: 1.2;
+	}
+
+	.home #primary h1,
+	#primary h1.entry-title,
+	section.contact h3,
+	.banner h2,
+	.home #primary h1,
+	.service-menus h2,
+	section.about h2,
+	section.contact h2,
+	section.service-ctas h2,
+	section.meet-doc h2 {
+		font-size: 2.5rem;
+		text-align: center;
+	}
+
+	.bx-wrapper .bx-prev {
+		left: 0;
+	}
+
+	.bx-wrapper .bx-next {
+		right: 0;
+	}
+
+	section.service-menus .cols a .box h4 {
+		font-size: 12px;
+		left: 1rem;
+	}
+
+	section.reviews blockquote {
+		padding: 0 1rem;
+	}
+	
+	section.contact .contact-info p, section.contact .contact-info p a {
+		font-size: 17px;
+	}
+
+}
+
+/* For SUPER Small Devices or Minor fixes */
+@media only screen and (max-width : 360px) {
+	
+	section.call-to-actions .cta {
+		margin: 2rem 0;
+		padding: 0 2rem;
+	}
+
+	.home .slider .boxed h2, .home .slider .boxed h2 span {
+	    font-size: 24px;
+	    line-height: 1.5;
+	}
+
+}

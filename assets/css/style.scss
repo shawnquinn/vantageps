@@ -1,0 +1,20 @@
+/*
+Theme Name: Vantage Plastic Surgery
+Theme URI: http://www.creativetakeweb.com
+Description: Theme produced by CreativeTake Medical
+Version: 1.0
+Author: CreativeTake Medical
+Author URI: http://www.creativetakeweb.com
+Text Domain: vantageps
+*/
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+@import 'variables';
+@import 'mixins';
+
+@import 'main';
+@import 'sections';
+@import 'bx-slider';
+@import 'slicknav';
+@import 'resp';

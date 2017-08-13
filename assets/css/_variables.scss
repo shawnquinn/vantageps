@@ -1,0 +1,32 @@
+//
+// Gloabl Variable Styles
+//
+
+//Typography
+@import url( 'https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i|Open+Sans:300,300i,400,400i,600,600i|Playfair+Display:400i|IM+Fell+French+Canon:400,400i');
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i,600,600i');
+
+$font-primary: 'Cormorant Garamond', serif;
+$font-secondary: 'Open Sans', sans-serif;
+$font-tertiary: 'Playfair Display', serif;
+$font-quaternary: 'IM Fell French Canon', serif;
+$body-font-size: 18px;
+$nav-font-size: 16px;
+
+// Theme Colors
+$theme-main-color: #5b6063;
+$theme-secondary-color: #80c7cb;
+$theme-accent-color: $theme-secondary-color;
+$white: rgba(255, 255, 255, 1);
+$black: #212121;
+$dark-grey: #333;
+
+// Standard Breakpoints
+$xs: 575px;
+$sm: 767px;
+$md: 991px;
+$lg: 1199px;
+
+// Spacing
+$section-padding: 4rem 0;

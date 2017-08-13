@@ -1,0 +1,535 @@
+@mixin align-center {
+  -webkit-box-align: center !important;
+  -webkit-align-items: center !important;
+  align-items: center !important;
+  -ms-flex-align: center !important;
+}
+@mixin anchor-main {
+  text-transform: uppercase;
+  color: $theme-main-color;
+  font-size: 16px;
+}
+@mixin d-flex {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+// Slider Contact Box
+/* SECTIONS ** */
+/* Home Section ** */
+section.home-content {
+  position: relative;
+  padding: $section-padding;
+  background: $white;
+}
+
+section.home-content .container,
+section.home-content .container-fluid {
+  position: relative;
+  z-index: 3;
+}
+
+.featured-title,
+section.home-content #primary h1 {
+  position: relative;
+  display: block;
+  margin: 0 auto 1rem;
+  padding-bottom: 0 0 1rem 0;
+  text-align: left;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: $theme-main-color;
+  font-family: $font-primary;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.featured-title span,
+section.home-content #primary h1 span {
+  display: block;
+  text-transform: none;
+  color: $theme-secondary-color;
+  font-family: $font-primary;
+  font-size: 42px;
+  font-style: italic;
+}
+
+.home-content .services a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  & h3 {
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem;
+    transition: opacity 0.2s ease;
+    text-align: left;
+    color: $white;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  &:hover h3 {
+    color: $black;
+  }
+
+  & .box-overlay {
+    transition: opacity 0.2s ease;
+    opacity: 0.6;
+  }
+
+  &:hover .box-overlay {
+    opacity: 0;
+  }
+}
+
+.home-content .services a .box-overlay {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: $theme-secondary-color;
+}
+/* ----------SERVICES ---------- */
+section.services {
+  position: relative;
+  padding: $section-padding;
+  background: url("img/bg-services.jpg") no-repeat center center;
+  background-size: cover;
+}
+/* Meet Doc */
+section.meet {
+  padding: 4rem 0;
+  background: $white url("img/logo-watermark.png") no-repeat center center;
+
+  & [class='col-sm-6'] {
+    @media screen and (max-width: $xs) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  & h4 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $theme-main-color;
+    font-size: 24px;
+    font-weight: 300;
+
+    & span {
+      display: block;
+      margin-top: 1rem;
+      text-transform: none;
+      color: $theme-secondary-color;
+      font-family: $font-primary;
+      font-size: 20px;
+    }
+
+    &::after {
+      position: relative;
+      display: block;
+      width: 25%;
+      height: 1px;
+      margin: 1rem 0;
+      content: '';
+      background-color: $theme-accent-color;
+      @media screen and (max-width: $md) {
+        margin: 1rem auto;
+      }
+    }
+  }
+}
+/* Call to Actions ** */
+section.call-to-actions {
+  padding: 3rem 0;
+}
+
+section.call-to-actions .cta a {
+  top: 0;
+  -webkit-box-shadow: 0 0 0 0 rgba(90, 91, 95, 0);
+  -moz-box-shadow: 0 0 0 0 rgba(90, 91, 95, 0);
+  box-shadow: 0 0 0 0 rgba(90, 91, 95, 0);
+}
+
+section.call-to-actions .cta,
+section.call-to-actions .cta a,
+section.call-to-actions .cta a h4,
+section.call-to-actions .cta a img {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+section.call-to-actions .cta a,
+section.call-to-actions .cta a .box {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+section.call-to-actions .cta a .box {
+  & .callout {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    width: 100%;
+    background: rgba($white,0.7);
+
+    & p {
+      position: relative;
+      margin: 0;
+      padding: 0 0.5rem;
+      color: $dark-grey;
+      font-family: $font-secondary;
+      font-size: 20px;
+      line-height: 1.1;
+      @media screen and (max-width: $md ) {
+        font-size: 12px;
+      }
+    }
+
+    & .hover-arrow {
+      padding: 0.33rem;
+      background: $theme-accent-color;
+      @media screen and (max-width: $sm ) {
+        flex: 1;
+        text-align: center;
+      }
+
+      .fa-stack i:first-child {
+        color: $white;
+      }
+
+      .fa-stack i:last-child {
+        color: $theme-accent-color;
+      }
+
+      & .fa-stack {
+        @media screen and (max-width: $md ) {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+section.call-to-actions .cta a:hover {
+  // -webkit-box-shadow: 0 16px 22px 0 rgba(90, 91, 95, .3);
+  // -moz-box-shadow: 0 16px 22px 0 rgba(90, 91, 95, .3);
+  // box-shadow: 0 16px 22px 0 rgba(90, 91, 95, .3);
+}
+
+section.call-to-actions .cta a .box h4 {
+  position: absolute;
+  z-index: 3;
+  top: 1rem;
+  left: 1rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  letter-spacing: 0;
+  color: $theme-main-color;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+section.call-to-actions .cta a .box img {
+  position: relative;
+}
+
+section.call-to-actions .cta a:hover .box img {
+  opacity: 0.6;
+}
+
+%transform {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  /* IE 9 */
+  /* Safari */
+}
+/* Reviews */
+@mixin quotes {
+  &::before {
+    position: absolute;
+    z-index: 5;
+    top: -35px;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    content: '"';
+    text-align: center;
+    color: $theme-main-color;
+    background-color: rgba($white,0.7);
+    font-family: $font-quaternary;
+    font-size: 80px;
+    @content;
+  }
+}
+
+section.review {
+  position: relative;
+  padding: 12rem 0;
+  background: #fff url("img/bg-review.jpg") no-repeat center center;
+
+  & blockquote {
+    margin: 0;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: $white;
+    border-left: 0;
+    font-family: 'Open Sans', serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 2;
+    @media screen and (max-width: $sm ) {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+
+  & .author {
+    position: relative;
+    display: block;
+    text-align: center;
+    color: $white;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+
+    &::before {
+      display: block;
+      width: 20px;
+      height: 1px;
+      margin: 0 auto 1rem;
+      content: '';
+      background-color: $theme-accent-color;
+    }
+
+    & .location {
+      display: block;
+      font-family: $font-primary;
+      font-size: 18px;
+      font-style: italic;
+    }
+  }
+}
+
+section.review blockquote span::before {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 20px;
+  height: 1px;
+  content: '';
+  background: #333;
+}
+
+section.review .bx-slider,
+section.review .bx-slider li,
+section.review .bx-wrapper {
+  height: auto;
+}
+/* Contact ** */
+section.contact {
+  padding: 4rem 0;
+  background: url("img/bg-footer.jpg") no-repeat center center;
+}
+
+section.contact .f-cols {
+  padding: 0;
+}
+
+section.contact .contact-info p a,
+section.contact a.hover-box,
+section.contact a.hover-box .box-title,
+section.contact a.hover-box .box-title h4,
+section.contact a.hover-box .box-title h4::after,
+section.contact a.hover-box .map-img img {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+section.contact .contact-info h3 {
+  @media screen and (max-width: $lg ) {
+    font-size: 42px;
+  }
+}
+
+section.contact .contact-info p a.hovered,
+section.contact .contact-info p a:hover {
+  color: #000;
+}
+
+section.contact .contact-info p,
+section.contact .contact-info p a {
+  text-transform: uppercase;
+  font-family: $font-primary;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+section.contact .contact-info {
+  @include social-icons {
+    border: 0;
+
+    & li a:hover {
+      opacity: 1;
+      color: $theme-main-color;
+      background: $white;
+    }
+  }
+}
+
+section.contact .location-img {
+  position: relative;
+}
+
+section.contact a.hover-box .box-title {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(51, 51, 51, .55);
+}
+
+section.contact a.hover-box.hovered .box-title,
+section.contact a.hover-box:hover .box-title {
+  opacity: 1;
+}
+
+section.contact a.hover-box .map-img {
+  opacity: 1;
+  background: #ddebbd;
+}
+
+section.contact a.hover-box.hovered .map-img img,
+section.contact a.hover-box:hover .map-img img {
+  opacity: 0.8;
+}
+
+section.contact a.hover-box .box-title h4.l-space {
+  letter-spacing: 5px;
+}
+
+section.contact .aligner {
+  position: relative;
+  height: 100%;
+}
+
+section.contact a.hover-box .box-title h4 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+  font-family: $font-primary;
+  font-size: 36px;
+}
+
+section.contact a.hover-box .box-title h4::after {
+  display: block;
+  width: 0;
+  height: 1px;
+  margin: 1rem auto;
+  content: '';
+  background: #ddebbd;
+}
+
+section.contact a.hover-box.hovered .box-title h4::after,
+section.contact a.hover-box:hover .box-title h4::after {
+  width: 100px;
+}
+
+section.contact img.map {
+  width: 100%;
+  height: auto;
+}
+
+section.contact .contact-info address {
+  margin-top: 2rem;
+  color: $dark-grey;
+  font-family: $font-primary;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.6;
+  @media screen and (max-width: $lg ) {
+    font-size: 18px;
+  }
+}
+
+section.contact a.tel {
+  display: block;
+}
+
+section.contact a.tel:hover {
+  text-decoration: underline;
+}
+
+section.contact .highlight a {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+section.contact address a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #555;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+section.contact address a span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+section.contact .highlight a:hover,
+section.contact address a:hover {
+  color: #0c739e;
+}
+/* Creds *** --------------------------- */
+section.creds {
+  padding: 3rem 0 5rem;
+}
+
+section.creds a img {
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(.9);
+  -ms-transform: scale(.9);
+  transform: scale(.9);
+  opacity: 0.7;
+  /* IE 9 */
+  /* Safari */
+}
+
+section.creds a:hover img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  /* IE 9 */
+  /* Safari */
+}

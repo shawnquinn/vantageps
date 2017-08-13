@@ -1,0 +1,15 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: $xs) {}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: $sm) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: $md) {}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: $lg) {}
+
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width

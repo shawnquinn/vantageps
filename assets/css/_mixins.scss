@@ -1,0 +1,46 @@
+//Mixins! Woohoo!
+
+@mixin social-icons {
+  & .social-icons {
+    width: 100%;
+    padding: 0.75rem 0;
+    text-align: center;
+    border-right: 1px solid $theme-main-color;
+    border-left: 1px solid $theme-main-color;
+
+    & li {
+      padding-right: 0.35rem;
+
+      &:nth-child(4n+1) a {
+        background: $theme-main-color;
+      }
+
+      &:nth-child(4n+2) a {
+        background: $theme-secondary-color;
+      }
+
+      &:nth-child(4n+3) a {
+        background: $theme-accent-color;
+      }
+
+      &:last-child {
+        padding: 0;
+      }
+
+      a {
+        margin: 0;
+        padding: 8px;
+        background: #1d2a4c;
+        font-size: 12px;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    @media screen and (max-width : 767px) {
+      border: 0;
+    }
+    @content;
+  }
+}
