@@ -67,6 +67,7 @@ section.home-content #primary h1 span {
   display: block;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 
   & h3 {
     position: absolute;
@@ -75,7 +76,7 @@ section.home-content #primary h1 span {
     width: 100%;
     margin: 0;
     padding: 0.5rem;
-    transition: opacity 0.2s ease;
+    transition: all 0.45s ease;
     text-align: left;
     color: $white;
     font-size: 32px;
@@ -87,12 +88,22 @@ section.home-content #primary h1 span {
   }
 
   & .box-overlay {
-    transition: opacity 0.2s ease;
+    transition: opacity 0.45s ease;
     opacity: 0.6;
   }
 
   &:hover .box-overlay {
     opacity: 0;
+  }
+}
+
+.home-content .services a {
+  img {
+    transition: transform .45s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.1);
   }
 }
 
@@ -120,7 +131,7 @@ section.cta-gallery {
     width: 100%;
     height: 100%;
     padding: $section-padding;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
   }
 }
 
@@ -128,10 +139,12 @@ section.cta-gallery a {
   & .box {
     width: 100%;
     padding: 0.5rem 0;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
     background-color: $theme-secondary-color;
 
     p {
+      transition: all 0.8s ease;
+      letter-spacing: 0;
       text-transform: uppercase;
       color: $white;
       font-family: $font-primary;
@@ -142,6 +155,10 @@ section.cta-gallery a {
 
   &:hover .box {
     background-color: darken($theme-secondary-color, 10%);
+  }
+
+  &:hover p {
+    letter-spacing: 2px;
   }
 
   & .just-woman {
@@ -204,7 +221,7 @@ section.meet {
   }
 
   .btn {
-    margin: 1rem 0 1.5rem 0;
+    margin: 1rem 0 1.5rem;
   }
 }
 
@@ -244,7 +261,7 @@ section.meet {
       @include block {
         right: 100%;
         left: initial;
-        width: 50%;
+        width: 2.659%;
       }
     }
   }
@@ -385,8 +402,17 @@ section.call-to-actions .cta a:hover .box img {
 
 section.review {
   position: relative;
-  padding: 12rem 0;
-  background: #fff url("img/bg-review.jpg") no-repeat center center;
+  padding: $section-padding;
+  background: $theme-secondary-color;
+
+  & h2 {
+    color: $white;
+
+    span {
+      margin-top: 1rem;
+      color: $white;
+    }
+  }
 
   & blockquote {
     margin: 0;

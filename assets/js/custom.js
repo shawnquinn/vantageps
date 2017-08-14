@@ -112,19 +112,19 @@ jQuery(function($) {
 		/*** PX-1 *** --------------------------- */
 
 
-		function px($name, $section, $id) {
-			$name = TweenMax.to($section, 1, { css: { backgroundPosition: 'center 100%' }, ease: Linear.easeNone });
-			new ScrollMagic.Scene( { triggerElement: $id} ).setTween($name).addTo(controller);
-		}
+		// function px($name, $section, $id) {
+		// 	$name = TweenMax.to($section, 1, { css: { backgroundPosition: 'center 100%' }, ease: Linear.easeNone });
+		// 	new ScrollMagic.Scene( { triggerElement: $id} ).setTween($name).addTo(controller);
+		// }
 
 		//Parallax Section 1
-		px('px1','section.services','#px-1');
+		//px('px1','section.services','#px-1');
 
 		//Parallax Section 2
-		px('px2','section.review','#px-2');
+		//px('px2','section.review','#px-2');
 
 		//Parallax Section 3
-		px('px3','section.contact','#px-3');
+		//px('px3','section.contact','#px-3');
 
 		function pxObject($name, $object, $id) {
 			$name = TweenMax.to($object, 1, { css: { left: '200px' }, ease: Linear.easeNone });
