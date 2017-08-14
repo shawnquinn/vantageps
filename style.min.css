@@ -63,7 +63,7 @@ a:active,a:focus,a:hover{text-decoration:none;color:#80c7cb;outline:0}
 ::-moz-selection{color:#fff;background:#80c7cb;text-shadow:none}
 ::selection{color:#fff;background:#80c7cb;text-shadow:none}
 a.button:after{content:''}
-#primary .wpcf7 input[type="submit"],.btn-primary,.float-box .wpcf7 input[type="submit"],.widget .wpcf7 input[type="submit"],a.btn-primary,a.btn-secondary{margin:2rem 0;padding-top:.75rem;padding-bottom:.75rem;-webkit-transition:all .2s ease;transition:all .2s ease;white-space:normal;letter-spacing:1px;text-transform:uppercase;color:white;border:1px solid #80c7cb;border-radius:5px;background:#80c7cb;font-family:'Open Sans',sans-serif;font-size:16px;font-weight:400}
+#primary .wpcf7 input[type="submit"],.btn-primary,.float-box .wpcf7 input[type="submit"],.widget .wpcf7 input[type="submit"],a.btn-primary,a.btn-secondary{margin:1rem 0 2rem 0;padding-top:.75rem;padding-bottom:.75rem;-webkit-transition:all .2s ease;transition:all .2s ease;white-space:normal;letter-spacing:1px;text-transform:uppercase;color:white;border:1px solid #80c7cb;border-radius:5px;background:#80c7cb;font-family:'Open Sans',sans-serif;font-size:16px;font-weight:400}
 #primary .wpcf7 input[type="submit"]:hover,.btn-primary:hover,.float-box .wpcf7 input[type="submit"]:hover,.widget .wpcf7 input[type="submit"]:hover,a.btn-primary:focus,a.btn-primary:hover{cursor:pointer;color:white;border:1px solid #5b6063;outline:0;background:#5b6063 !important}
 .btn-primary.focus,.btn-primary:focus{box-shadow:0 0 0 2px rgba(128,199,203,0.5)}
 .float-box .wpcf7 input[type="submit"]{color:#fff;background:#262626}
@@ -409,19 +409,31 @@ div.wpcf7-validation-errors{z-index:9999999999;color:red;border:2px solid #f7e70
 .g-recaptcha{float:left;width:100%;-webkit-transform:scale(0.9);-ms-transform:scale(0.9);transform:scale(0.9)}
 section.home-content{position:relative;padding:4rem 0;background:white}
 section.home-content .container,section.home-content .container-fluid{position:relative;z-index:3}
-.featured-title,section.home-content #primary h1{position:relative;display:block;margin:0 auto 1rem;padding-bottom:0 0 1rem 0;text-align:left;letter-spacing:0;text-transform:uppercase;color:#5b6063;font-family:"Cormorant Garamond",serif;font-size:72px;font-weight:600;line-height:1.25}
-.featured-title span,section.home-content #primary h1 span{display:block;text-transform:none;color:#80c7cb;font-family:"Cormorant Garamond",serif;font-size:42px;font-style:italic}
+.featured-title,section.home-content #primary h1{position:relative;display:block;margin:0 auto 1rem;padding-bottom:0 0 1rem 0;text-align:left;letter-spacing:0;text-transform:uppercase;color:#80878a;font-family:"Cormorant Garamond",serif;font-size:68px;font-weight:600;line-height:1}
+.featured-title span,section.home-content #primary h1 span{display:block;text-transform:none;color:#80c7cb;font-family:"Cormorant Garamond",serif;font-size:36px;font-style:italic}
 .home-content .services a{position:relative;display:block;width:100%;height:100%}
 .home-content .services a h3{position:absolute;z-index:9;bottom:0;width:100%;margin:0;padding:.5rem;-webkit-transition:opacity .2s ease;transition:opacity .2s ease;text-align:left;color:white;font-size:32px;font-weight:600}
 .home-content .services a:hover h3{color:#212121}
 .home-content .services a .box-overlay{-webkit-transition:opacity .2s ease;transition:opacity .2s ease;opacity:.6}
 .home-content .services a:hover .box-overlay{opacity:0}
 .home-content .services a .box-overlay{position:absolute;z-index:3;top:0;left:0;display:block;width:100%;height:100%;background:#80c7cb}
-section.services{position:relative;padding:4rem 0;background:url("img/bg-services.jpg") no-repeat center center;background-size:cover}
-section.meet{padding:4rem 0;background:white url("img/logo-watermark.png") no-repeat center center}
+section.cta-gallery{position:relative;margin:4rem 0 0;padding:0;background:#dddfe0}
+section.cta-gallery>a{position:relative;top:0;left:0;width:100%;height:100%;padding:4rem 0;-webkit-transition:all .2s ease;transition:all .2s ease}
+section.cta-gallery a .box{width:100%;padding:.5rem 0;-webkit-transition:all .2s ease;transition:all .2s ease;background-color:#80c7cb}
+section.cta-gallery a .box p{text-transform:uppercase;color:white;font-family:"Cormorant Garamond",serif;font-size:24px;font-weight:600}
+section.cta-gallery a:hover .box{background-color:#5cb7bc}
+section.cta-gallery a .just-woman{position:relative;margin-top:-50%}
+section.cta-gallery a .camera{position:absolute;z-index:9;right:0;bottom:0;left:0}
+section.meet{overflow:hidden;padding:4rem 0 0;background:white}
 section.meet h4{letter-spacing:1px;text-transform:uppercase;color:#5b6063;font-size:24px;font-weight:300}
 section.meet h4 span{display:block;margin-top:1rem;text-transform:none;color:#80c7cb;font-family:"Cormorant Garamond",serif;font-size:20px}
 section.meet h4::after{position:relative;display:block;width:25%;height:1px;margin:1rem 0;content:'';background-color:#80c7cb}
+section.meet p{margin:.75rem 0}
+section.meet .btn{margin:1rem 0 1.5rem 0}
+section.meet .p-abs{position:absolute;z-index:2;bottom:0;left:0;padding:0 15px}
+section.meet .creds{position:relative;padding:1rem 0;background:#eaebec}
+section.meet .creds::before{position:absolute;z-index:1;bottom:0;left:100%;display:block;width:100%;height:100%;content:'';background:#eaebec}
+section.meet .creds::after{position:absolute;z-index:1;bottom:0;left:100%;display:block;width:100%;height:100%;content:'';background:#eaebec;right:100%;left:initial;width:50%}
 section.call-to-actions{padding:3rem 0}
 section.call-to-actions .cta a{top:0;box-shadow:0 0 0 0 rgba(90,91,95,0)}
 section.call-to-actions .cta,section.call-to-actions .cta a,section.call-to-actions .cta a h4,section.call-to-actions .cta a img{-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
@@ -518,6 +530,8 @@ section.creds a:hover img{-webkit-transform:scale(1);-ms-transform:scale(1);tran
 }@media only screen and (max-width:1275px){.bx-wrapper .bx-prev{left:0}
 .bx-wrapper .bx-next{right:0;left:4rem}
 .bx-wrapper .bx-controls-direction a{top:95%}
+}@media(max-width:1199px){.featured-title,section.home-content #primary h1{font-size:48px}
+.featured-title span,section.home-content #primary h1 span{font-size:30px}
 }@media screen and (max-width:1199px){section.contact .contact-info h3{font-size:42px}
 section.contact .contact-info address{font-size:18px}
 }@media only screen and (max-width:1199px){.bx-wrapper .bx-controls-direction a{top:100%}

@@ -39,11 +39,14 @@ section.home-content #primary h1 {
   text-align: left;
   letter-spacing: 0;
   text-transform: uppercase;
-  color: $theme-main-color;
+  color: lighten($theme-main-color, 15%); // $theme-main-color lightened a bit
   font-family: $font-primary;
-  font-size: 72px;
+  font-size: 68px;
   font-weight: 600;
-  line-height: 1.25;
+  line-height: 1;
+  @media (max-width: $lg) {
+    font-size: 48px;
+  }
 }
 
 .featured-title span,
@@ -52,8 +55,11 @@ section.home-content #primary h1 span {
   text-transform: none;
   color: $theme-secondary-color;
   font-family: $font-primary;
-  font-size: 42px;
+  font-size: 36px;
   font-style: italic;
+  @media (max-width: $lg) {
+    font-size: 30px;
+  }
 }
 
 .home-content .services a {
@@ -101,16 +107,61 @@ section.home-content #primary h1 span {
   background: $theme-secondary-color;
 }
 /* ----------SERVICES ---------- */
-section.services {
+section.cta-gallery {
   position: relative;
-  padding: $section-padding;
-  background: url("img/bg-services.jpg") no-repeat center center;
-  background-size: cover;
+  margin: 4rem 0 0;
+  padding: 0;
+  background: rgb(221, 223, 224);
+
+  & > a {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: $section-padding;
+    transition: all 0.2s ease;
+  }
+}
+
+section.cta-gallery a {
+  & .box {
+    width: 100%;
+    padding: 0.5rem 0;
+    transition: all 0.2s ease;
+    background-color: $theme-secondary-color;
+
+    p {
+      text-transform: uppercase;
+      color: $white;
+      font-family: $font-primary;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  &:hover .box {
+    background-color: darken($theme-secondary-color, 10%);
+  }
+
+  & .just-woman {
+    position: relative;
+    margin-top: -50%;
+  }
+
+  & .camera {
+    position: absolute;
+    z-index: 9;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 }
 /* Meet Doc */
 section.meet {
-  padding: 4rem 0;
-  background: $white url("img/logo-watermark.png") no-repeat center center;
+  overflow: hidden;
+  padding: 4rem 0 0;
+  background: $white;
 
   & [class='col-sm-6'] {
     @media screen and (max-width: $xs) {
@@ -144,6 +195,56 @@ section.meet {
       background-color: $theme-accent-color;
       @media screen and (max-width: $md) {
         margin: 1rem auto;
+      }
+    }
+  }
+
+  p {
+    margin: 0.75rem 0;
+  }
+
+  .btn {
+    margin: 1rem 0 1.5rem 0;
+  }
+}
+
+section.meet {
+  .p-abs {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    padding: $bs-padding;
+  }
+}
+@mixin block {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: lighten($theme-main-color, 55%);
+  @content;
+}
+
+section.meet {
+  & .creds {
+    position: relative;
+    padding: 1rem 0;
+    background: lighten($theme-main-color, 55%);
+
+    &::before {
+      @include block;
+    }
+
+    &::after {
+      @include block {
+        right: 100%;
+        left: initial;
+        width: 50%;
       }
     }
   }

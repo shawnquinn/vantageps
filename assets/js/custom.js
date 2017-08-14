@@ -1,3 +1,18 @@
+var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    }
+  }
+);
+wow.init();
+
 //Begin jQuery
 jQuery(function($) {
 
@@ -110,6 +125,17 @@ jQuery(function($) {
 
 		//Parallax Section 3
 		px('px3','section.contact','#px-3');
+
+		function pxObject($name, $object, $id) {
+			$name = TweenMax.to($object, 1, { css: { left: '200px' }, ease: Linear.easeNone });
+			new ScrollMagic.Scene( { triggerElement: $id} ).setTween($name).addTo(controller);
+		}
+
+		pxObject('pxo1','img.camera','#pxo-1');
+
+
+		pxo2 = TweenMax.to('section.cta-gallery', 1, { css: { backgroundColor: 'rgb(255,255,255)' }, ease: Linear.easeNone });
+		new ScrollMagic.Scene( { triggerElement: '#pxo-2'} ).setTween(pxo2).addTo(controller);
 
 		//Parallax Section 3
 		//px('px4','section.lake-master','#px-4');
