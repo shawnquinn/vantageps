@@ -193,39 +193,72 @@ $empty = ( empty( $lumos_options['home_headline'] ) && empty( $lumos_options['ho
 </section><!-- section -->
 
 <section class="review">
-	<div class="container">
+	<div class="container wow fadeIn" data-wow-duration="2.5s" data-wow-offset="250">
     <div class="row">
       <div class="col-12">
         <h2 class="featured-title text-center">Testimoials<span>What Our Patients Are Saying</span></h2>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-6 my-4">
-        <div class="box">
-          <blockquote>
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus lacus, vehicula sed mauris id, auctor congue sapien. Phasellus rhoncus at lacus vel faucibus... ”
-          </blockquote>
-          <div class="author">
-            <span class="name">Jane Doe</span>
-            <span class="location">Rancho Mirage</span>
+    <ul class="bx-review">
+      <li>
+        <div class="row">
+          <div class="col-md-6 my-4">
+            <div class="box">
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie molestie egestas. Aliquam venenatis aliquet neque a semper. Nam euismod tempus eros, sit amet tristique metus molestie consectetur. Duis gravida nisi nec vestibulum varius. Proin in tincidunt odio. Nulla placerat convallis ligula et rhoncus. Mauris sit amet dapibus nulla....
+                <div class="author">
+                  <span class="name">Jane Doe,</span> <span class="location">City Name</span>
+                </div>
+              </blockquote>
+            </div>
           </div>
-        </div>
-      </div>
-      <!-- col -->
+          <!-- col -->
+          <div class="col-md-6 my-4">
+            <div class="box">
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie molestie egestas. Aliquam venenatis aliquet neque a semper. Nam euismod tempus eros, sit amet tristique metus molestie consectetur. Duis gravida nisi nec vestibulum varius. Proin in tincidunt odio. Nulla placerat convallis ligula et rhoncus. Mauris sit amet dapibus nulla....
+                <div class="author">
+                  <span class="name">Jane Doe,</span> <span class="location">City Name</span>
+                </div>
+              </blockquote>
 
-      <div class="col-md-6 my-4">
-        <div class="box">
-          <blockquote>
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus lacus, vehicula sed mauris id, auctor congue sapien. Phasellus rhoncus at lacus vel faucibus... ”
-          </blockquote>
-          <div class="author">
-            <span class="name">Jane Doe</span>
-            <span class="location">Rancho Mirage</span>
+            </div>
           </div>
+          <!-- col -->
         </div>
-      </div>
-      <!-- col -->
-    </div>
+        <!-- row -->
+      </li>
+
+      <li>
+        <div class="row">
+          <div class="col-md-6 my-4">
+            <div class="box">
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie molestie egestas. Aliquam venenatis aliquet neque a semper. Nam euismod tempus eros, sit amet tristique metus molestie consectetur. Duis gravida nisi nec vestibulum varius. Proin in tincidunt odio. Nulla placerat convallis ligula et rhoncus. Mauris sit amet dapibus nulla....
+                <div class="author">
+                  <span class="name">Jane Doe,</span> <span class="location">City Name</span>
+                </div>
+              </blockquote>
+            </div>
+          </div>
+          <!-- col -->
+          <div class="col-md-6 my-4">
+            <div class="box">
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie molestie egestas. Aliquam venenatis aliquet neque a semper. Nam euismod tempus eros, sit amet tristique metus molestie consectetur. Duis gravida nisi nec vestibulum varius. Proin in tincidunt odio. Nulla placerat convallis ligula et rhoncus. Mauris sit amet dapibus nulla....
+                <div class="author">
+                  <span class="name">Jane Doe,</span> <span class="location">City Name</span>
+                </div>
+              </blockquote>
+
+            </div>
+          </div>
+          <!-- col -->
+        </div>
+        <!-- row -->
+      </li>
+
+    </ul
 	</div><!-- .container -->
 </section><!-- section -->
 

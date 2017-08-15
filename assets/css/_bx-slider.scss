@@ -89,27 +89,6 @@
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
-
-.bx-wrapper .bx-prev {
-	left: 1rem;
-	background: url(img/controls-alt.png) no-repeat 0 0;
-	background-size: 200%;
-
-}
-
-.bx-wrapper .bx-next {
-	right: 1rem;
-	background: url(img/controls-alt.png) no-repeat -47px 0;
-	background-size: 200%;
-}
-
-.bx-wrapper .bx-prev:hover,
-.bx-wrapper .bx-next:hover {
-	opacity: 0.7;
-}
-
-
-
 .bx-wrapper .bx-controls-direction a.disabled {
 	display: none;
 }
@@ -275,23 +254,48 @@
 
 }
 
+.bx-controls-direction {
+	position: relative;
+	height: 35px;
+	display: block;
+	width: 133px;
+	margin: 0 auto;
+}
 
 .bx-wrapper .bx-controls-direction a {
-	position: absolute;
-	top: 40%;
-	margin-top: 0;
-	outline: 0;
-	width:  47px;
-	height: 47px;
-	text-indent: -9999px;
-	z-index: 999;
-	opacity: 1;
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+    color: #fff;
+    outline: 0;
+    z-index: 999;
+		background: lighten($theme-accent-color, 15%);
+		border: 0;
+    height: 35px;
+    width: 35px;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    -o-transition: .25s;
+    -ms-transition: .25s;
+    -moz-transition: .25s;
+    -webkit-transition: .25s;
+    opacity: 1;
+}
 
-	-webkit-transition: 	opacity 0.3s ease-in-out;
-	-moz-transition: 		opacity 0.3s ease-in-out;
-	-ms-transition: 		opacity 0.3s ease-in-out;
-	-o-transition: 			opacity 0.3s ease-in-out;
-	transition: 			opacity 0.3s ease-in-out;
+.bx-wrapper .bx-prev {
+	left: 1rem;
+}
+
+.bx-wrapper .bx-next {
+	right: 1rem;
+}
+
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-next:hover {
+	background: #fff;
+	color: $theme-accent-color;
 }
 
 

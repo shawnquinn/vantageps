@@ -245,7 +245,9 @@ jQuery(function($) {
 			pause: 10000,
 			speed: 400,
 			randomStart: false,
-			touchEnabled: true
+			touchEnabled: true,
+      prevText: '<i class="fa fa-angle-left"></i>',
+			nextText: '<i class="fa fa-angle-right"></i>'
 		});
 
 		/****************************************************************/
