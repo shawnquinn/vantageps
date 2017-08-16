@@ -66,6 +66,11 @@ section.home-content #primary h1 span {
   overflow: hidden;
   width: 100%;
   height: 100%;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
 
   & h3 {
     font-size: 32px;
@@ -107,7 +112,7 @@ section.home-content #primary h1 span {
 
   &:hover img {
     -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 
@@ -171,7 +176,6 @@ section.cta-gallery a {
   & .just-woman {
     position: relative;
     margin-top: -50%;
-
     @media screen and (max-width: $sm) {
       margin-top: 0;
     }
@@ -243,7 +247,6 @@ section.meet {
     bottom: 0;
     left: 0;
     padding: $bs-padding;
-
     @media screen and (max-width: $sm) {
       position: relative;
       padding: 0;
@@ -285,7 +288,7 @@ section.meet {
 
 section.review {
   position: relative;
-  padding: 4rem 0 8rem 0;
+  padding: 4rem 0 8rem;
   background: $theme-secondary-color;
 
   & h2 {
@@ -316,7 +319,7 @@ section.review {
       height: 30px;
       content: '';
       opacity: 0.7;
-      background: url("img/quote.png") no-repeat 0 0;
+      background: url('img/quote.png') no-repeat 0 0;
       background-size: 40px 30px;
     }
     @media screen and (max-width: $sm ) {
@@ -340,14 +343,18 @@ section.review .bx-slider li,
 section.review .bx-wrapper {
   height: auto;
 }
-
 /* Contact ** */
 section.contact {
   padding: 0;
   background: url('img/bg-footer.jpg') no-repeat center center;
+  background-size: cover;
 
   & .contact-info {
+    position: relative;
+    z-index: 9999;
     margin-top: -4rem;
+    margin-bottom: -4rem;
+    background: rgba(#fff, .9);
   }
 }
 
@@ -371,145 +378,53 @@ section.contact .contact-info p a {
 }
 
 section.contact .contact-info {
-  @include social-icons {
-    border: 0;
-
-    & li a:hover {
+  & a {
+    & img {
+      opacity: 0.7;
+      transition: opacity 0.33s ease;
+    }
+    &:hover img {
       opacity: 1;
-      color: $theme-main-color;
-      background: $white;
     }
   }
 }
 
-section.contact .location-img {
-  position: relative;
-}
-
-section.contact a.hover-box .box-title {
-  position: absolute;
-  z-index: 3;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  background: rgba(51, 51, 51, .55);
-}
-
-section.contact a.hover-box.hovered .box-title,
-section.contact a.hover-box:hover .box-title {
-  opacity: 1;
-}
-
-section.contact a.hover-box .map-img {
-  opacity: 1;
-  background: #ddebbd;
-}
-
-section.contact a.hover-box.hovered .map-img img,
-section.contact a.hover-box:hover .map-img img {
-  opacity: 0.8;
-}
-
-section.contact a.hover-box .box-title h4.l-space {
-  letter-spacing: 5px;
-}
-
-section.contact .aligner {
-  position: relative;
-  height: 100%;
-}
-
-section.contact a.hover-box .box-title h4 {
-  font-family: $font-primary;
-  font-size: 36px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #fff;
-  text-shadow: 0 0 5px #000;
-}
-
-section.contact a.hover-box .box-title h4::after {
-  display: block;
-  width: 0;
-  height: 1px;
-  margin: 1rem auto;
-  content: '';
-  background: #ddebbd;
-}
-
-section.contact a.hover-box.hovered .box-title h4::after,
-section.contact a.hover-box:hover .box-title h4::after {
-  width: 100px;
-}
-
-section.contact img.map {
-  width: 100%;
-  height: auto;
-}
-
 section.contact .contact-info address {
-  font-family: $font-primary;
-  font-size: 24px;
+  font-family: $font-secondary;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 1.6;
-  margin-top: 2rem;
   color: $dark-grey;
+  margin: 1rem 0 2rem 0;
+
+  & span {
+    font-size: 16px;
+    font-style: italic;
+  }
   @media screen and (max-width: $lg ) {
     font-size: 18px;
   }
 }
 
-section.contact a.tel {
-  display: block;
-}
+section.social {
+  padding: 8rem 0 4rem;
+  background: $white;
 
-section.contact a.tel:hover {
-  text-decoration: underline;
-}
+  & h4 {
+    font-size: 34px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
 
-section.contact .highlight a {
-  font-size: 24px;
-  font-weight: 700;
-}
+  & .social-icons li a {
+    font-size: 32px;
+    padding: 16px;
+    transition: all 0.33s ease;
+    color: $white;
+    border-radius: 50%;
+    background: $theme-main-color;
 
-section.contact address a {
-  font-size: 20px;
-  font-weight: 600;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  color: #555;
-}
-
-section.contact address a span {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-section.contact .highlight a:hover,
-section.contact address a:hover {
-  color: #0c739e;
-}
-/* Creds *** --------------------------- */
-section.creds {
-  padding: 3rem 0 5rem;
-}
-
-section.creds a img {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  -webkit-transform: scale(.9);
-  transform: scale(.9);
-  opacity: 0.7;
-  /* IE 9 */
-  /* Safari */
-}
-
-section.creds a:hover img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  /* IE 9 */
-  /* Safari */
+    &:hover {
+      background: $theme-secondary-color;
+    }
+  }
 }

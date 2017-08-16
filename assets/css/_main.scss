@@ -1743,7 +1743,7 @@ h3.widget-title {
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   text-transform: none;
-  color: $dark-grey;
+  color: $white;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
@@ -1757,8 +1757,8 @@ h3.widget-title {
   width: 100%;
   height: auto;
   text-align: left;
-  color: $dark-grey;
-  background: $white;
+  color: $white;
+  background: $theme-main-color;
   font-weight: 400;
 
   & .container {
@@ -1770,7 +1770,7 @@ h3.widget-title {
 .bottom h4 {
   text-align: left;
   text-transform: uppercase;
-  color: $theme-main-color;
+  color: $white;
   font-size: 22px;
   font-weight: 400;
 }
@@ -1785,7 +1785,7 @@ h3.widget-title {
 }
 
 .bottom a {
-  color: #7d8589;
+  color: $white;
   font-size: 16px;
 }
 
@@ -1813,6 +1813,12 @@ h3.widget-title {
   text-align: center;
   color: $white;
   background: $theme-main-color;
+
+  & > div[class*="col-12"] {
+    border-top: 1px solid $white;
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
 }
 
 .footer-copyright,
@@ -1942,13 +1948,6 @@ header .social-icons li a:hover {
   line-height: normal;
 }
 
-.social h4 {
-  margin-left: 150px;
-  text-transform: uppercase;
-  color: #552C92;
-  font-size: 18px;
-}
-
 #footer-info {
   @include social-icons {
     border: 0;
@@ -1956,12 +1955,6 @@ header .social-icons li a:hover {
     & li {
       width: auto;
       margin: 0.5rem 0.25rem;
-    }
-
-    & li a:hover {
-      opacity: 1;
-      color: $theme-main-color;
-      background-color: $white;
     }
   }
 }

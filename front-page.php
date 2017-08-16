@@ -140,7 +140,7 @@ $empty = ( empty( $lumos_options['home_headline'] ) && empty( $lumos_options['ho
   <a href="<?php echo home_url('//') ?>">
     <div id="pxo-1" class="container-fluid">
       <div class="row align-items-center">
-        <div class="col-md-6 lg-0">
+        <div class="col-md-6 px-0">
           <div class="box">
             <p class="text-center">View Our Photo Gallery</p>
           </div>
