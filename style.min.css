@@ -252,7 +252,6 @@ h3.widget-title{position:relative;display:block;margin:0 0 10px;text-transform:u
 #footer-nav li:first-child a{background:0}
 .bottom{position:relative;width:100%;height:auto;text-align:left;color:#333;background:white;font-weight:400}
 .bottom .container{position:relative;z-index:3}
-.bottom::before{position:absolute;z-index:1;right:100px;bottom:-190px;display:block;width:300px;height:415px;content:'';background:url("img/logo-watermark-sm.png") no-repeat 0 0;background-size:cover}
 .bottom h4{text-align:left;text-transform:uppercase;color:#5b6063;font-size:22px;font-weight:400}
 .bottom address,.bottom address a{font-size:16px}
 .bottom address a{font-weight:400}
@@ -437,28 +436,15 @@ section.meet .p-abs{position:absolute;z-index:2;bottom:0;left:0;padding:0 15px}
 section.meet .creds{position:relative;padding:1rem 0;background:#eaebec}
 section.meet .creds::before{position:absolute;z-index:1;bottom:0;left:100%;display:block;width:100%;height:100%;content:'';background:#eaebec}
 section.meet .creds::after{position:absolute;z-index:1;bottom:0;left:100%;display:block;width:100%;height:100%;content:'';background:#eaebec;right:100%;left:initial;width:2.659%}
-section.call-to-actions{padding:3rem 0}
-section.call-to-actions .cta a{top:0;box-shadow:0 0 0 0 rgba(90,91,95,0)}
-section.call-to-actions .cta,section.call-to-actions .cta a,section.call-to-actions .cta a h4,section.call-to-actions .cta a img{-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
-section.call-to-actions .cta a,section.call-to-actions .cta a .box{position:relative;display:block;overflow:hidden;width:100%;height:100%}
-section.call-to-actions .cta a .box .callout{position:absolute;z-index:5;bottom:0;width:100%;background:rgba(255,255,255,0.7)}
-section.call-to-actions .cta a .box .callout p{font-family:"Open Sans",sans-serif;font-size:20px;line-height:1.1;position:relative;margin:0;padding:0 .5rem;color:#333}
-section.call-to-actions .cta a .box .callout .hover-arrow{padding:.33rem;background:#80c7cb}
-section.call-to-actions .cta a .box .callout .hover-arrow .fa-stack i:first-child{color:white}
-section.call-to-actions .cta a .box .callout .hover-arrow .fa-stack i:last-child{color:#80c7cb}
-section.call-to-actions .cta a .box h4{font-size:30px;font-weight:300;position:absolute;z-index:3;top:1rem;left:1rem;width:100%;margin:0;padding:0;text-align:left;letter-spacing:0;color:#5b6063}
-section.call-to-actions .cta a .box img{position:relative}
-section.call-to-actions .cta a:hover .box img{opacity:.6}
-section.review{position:relative;padding:4rem 0;background:#80c7cb}
+section.review{position:relative;padding:4rem 0 8rem 0;background:#80c7cb}
 section.review h2{color:white}
 section.review h2 span{margin-top:1rem;color:white}
 section.review blockquote{font-family:'Open Sans',serif;font-size:18px;font-weight:normal;font-style:italic;line-height:2;margin:0;padding:1rem 0;text-align:left;color:white;border-left:0}
 section.review blockquote::before{position:relative;display:inline-block;width:40px;height:30px;content:'';opacity:.7;background:url("img/quote.png") no-repeat 0 0;background-size:40px 30px}
 section.review .author{font-weight:400;font-style:normal;position:relative;display:block;text-align:right;color:white}
 section.review .bx-slider,section.review .bx-slider li,section.review .bx-wrapper{height:auto}
-section.contact{padding:4rem 0;background:url("img/bg-footer.jpg") no-repeat center center}
-section.contact .f-cols{padding:0}
-section.contact .contact-info p a,section.contact a.hover-box,section.contact a.hover-box .box-title,section.contact a.hover-box .box-title h4,section.contact a.hover-box .box-title h4::after,section.contact a.hover-box .map-img img{-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
+section.contact{padding:0;background:url("img/bg-footer.jpg") no-repeat center center}
+section.contact .contact-info{margin-top:-4rem}
 section.contact .contact-info p a.hovered,section.contact .contact-info p a:hover{color:#000}
 section.contact .contact-info p,section.contact .contact-info p a{font-family:"Cormorant Garamond",serif;font-size:30px;font-weight:300;text-transform:uppercase}
 section.contact .contact-info .social-icons{width:100%;padding:.75rem 0;text-align:center;border-right:1px solid #5b6063;border-left:1px solid #5b6063;border:0}
@@ -528,28 +514,19 @@ section.creds a:hover img{-webkit-transform:scale(1);-ms-transform:scale(1);tran
 .bx-wrapper .bx-prev:hover,.bx-wrapper .bx-next:hover{background:#fff;color:#80c7cb}
 .slicknav_menu,.mobile-entry-header{display:none;padding:0 !important}
 @media only screen and (min-width:2050px){.bx-slider,.bx-slider li,.bx-wrapper,.home .slider{height:800px}
-}@media only screen and (max-width:1380px){.bx-wrapper .bx-prev{left:-5rem}
-.bx-wrapper .bx-next{right:-5rem}
 }@media only screen and (max-width:1280px){header .social-icons li a{font-size:18px}
-}@media only screen and (max-width:1275px){.bx-wrapper .bx-prev{left:0}
-.bx-wrapper .bx-next{right:0;left:4rem}
-.bx-wrapper .bx-controls-direction a{top:95%}
 }@media(max-width:1199px){.featured-title,section.home-content #primary h1{font-size:48px}
 .featured-title span,section.home-content #primary h1 span{font-size:30px}
 }@media screen and (max-width:1199px){section.contact .contact-info h3{font-size:42px}
 section.contact .contact-info address{font-size:18px}
-}@media only screen and (max-width:1199px){.bx-wrapper .bx-controls-direction a{top:100%}
 }@media screen and (max-width:991px){section.meet h4::after{margin:1rem auto}
-section.call-to-actions .cta a .box .callout p{font-size:12px}
-section.call-to-actions .cta a .box .callout .hover-arrow .fa-stack{font-size:10px}
+.bx-slider li#one{background:#fff url(img/slider/slider1.jpg) no-repeat 64% center}
 }@media screen and (max-width:767px){#footer-info .social-icons{border:0}
-.home .slider::after{position:absolute;z-index:990;top:0;left:0;display:block;width:100%;height:100%;content:'';background-color:rgba(255,255,255,0.6)}
-section.call-to-actions .cta a .box .callout .hover-arrow{text-align:center;-webkit-box-flex:1;-ms-flex:1;-webkit-flex:1;flex:1}
+.home .slider::after{position:absolute;z-index:990;top:0;left:0;display:none !important;width:100%;height:100%;content:'';background-color:rgba(255,255,255,0.6)}
+section.cta-gallery a .just-woman{margin-top:0}
+section.meet .p-abs{position:relative;padding:0}
 section.review blockquote{font-size:14px;line-height:1.5}
 section.contact .contact-info .social-icons{border:0}
-}@media only screen and (max-width:767px){.bx-controls-direction{position:relative;display:block;width:50%;height:47px;margin:1rem auto 2rem auto}
-.bx-wrapper .bx-prev{left:0}
-.bx-wrapper .bx-next{right:0;left:initial}
 }@media(max-width:767px){#access .menu-slick{display:none}
 .slicknav_menu .slicknav_icon-bar{background-color:white}
 .slicknav_nav{background:#fff}
@@ -567,7 +544,7 @@ ul.slicknav_nav{background:white;text-align:left;margin-top:50px}
 .slicknav_nav .slicknav_row,.slicknav_nav a{padding:10px}
 .slicknav_nav a{color:#5b6063}
 .slicknav_nav .slicknav_row:hover,.slicknav_nav a:hover{border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;background:#80c7cb;color:white}
-}@media screen and (max-width:575px){section.meet [class='col-sm-6']{margin-bottom:3rem}
-}@media only screen and (max-width:575px){.home .slider{background:#fff url("img/slider/slider1.jpg") no-repeat center center}
+}@media only screen and (max-width:575px){.home .slider{background:#fff url("img/slider/slider1.jpg") no-repeat 64% center}
 .home .slider .bx-slider{display:none !important}
+}@media screen and (max-width:575px){section.meet [class='col-sm-6']{margin-bottom:3rem}
 }

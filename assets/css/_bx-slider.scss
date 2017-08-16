@@ -191,6 +191,10 @@
 	background-size: 			cover;
 	max-width: 100%;
 	width: 100%;
+
+	@media screen and (max-width: $md) {
+		background: #fff url(img/slider/slider1.jpg) no-repeat 64% center
+	}
 }
 
 .bx-slider li#two {
@@ -296,56 +300,4 @@
 .bx-wrapper .bx-next:hover {
 	background: #fff;
 	color: $theme-accent-color;
-}
-
-
-@media only screen and (max-width : 1380px) {
-	.bx-wrapper .bx-prev {
-		left: -5rem;
-	}
-
-	.bx-wrapper .bx-next {
-		right: -5rem;
-	}
-}
-
-@media only screen and (max-width : 1275px) {
-	.bx-wrapper .bx-prev {
-		left: 0rem;
-	}
-
-	.bx-wrapper .bx-next {
-		right: 0rem;
-		left: 4rem;
-	}
-
-	.bx-wrapper .bx-controls-direction a {
-		top: 95%;
-	}
-}
-
-@media only screen and (max-width : 1199px) {
-
-	.bx-wrapper .bx-controls-direction a {
-		top: 100%;
-	}
-}
-
-@media only screen and (max-width : 767px) {
-	.bx-controls-direction {
-		position: relative;
-		display: block;
-		width: 50%;
-		height: 47px;
-		margin: 1rem auto 2rem auto;
-	}
-
-	.bx-wrapper .bx-prev {
-		left: 0rem;
-	}
-
-	.bx-wrapper .bx-next {
-		right: 0rem;
-		left: initial;
-	}
 }

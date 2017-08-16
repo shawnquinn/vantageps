@@ -112,10 +112,10 @@ jQuery(function($) {
 		/*** PX-1 *** --------------------------- */
 
 
-		// function px($name, $section, $id) {
-		// 	$name = TweenMax.to($section, 1, { css: { backgroundPosition: 'center 100%' }, ease: Linear.easeNone });
-		// 	new ScrollMagic.Scene( { triggerElement: $id} ).setTween($name).addTo(controller);
-		// }
+		function px($name, $section, $id) {
+			$name = TweenMax.to($section, 1, { css: { backgroundPosition: 'center 100%' }, ease: Linear.easeNone });
+			new ScrollMagic.Scene( { triggerElement: $id} ).setTween($name).addTo(controller);
+		}
 
 		//Parallax Section 1
 		//px('px1','section.services','#px-1');
@@ -124,16 +124,16 @@ jQuery(function($) {
 		//px('px2','section.review','#px-2');
 
 		//Parallax Section 3
-		//px('px3','section.contact','#px-3');
+		px('px3','section.contact','#px-3');
 
+    // Animate Object - Camera move to the right
 		function pxObject($name, $object, $id) {
 			$name = TweenMax.to($object, 1, { css: { left: '200px' }, ease: Linear.easeNone });
 			new ScrollMagic.Scene( { triggerElement: $id} ).setTween($name).addTo(controller);
 		}
+    pxObject('pxo1','img.camera','#pxo-1');
 
-		pxObject('pxo1','img.camera','#pxo-1');
-
-
+    // Change background color as you scroll down. Mmmm that's nice
 		pxo2 = TweenMax.to('section.cta-gallery', 1, { css: { backgroundColor: 'rgb(255,255,255)' }, ease: Linear.easeNone });
 		new ScrollMagic.Scene( { triggerElement: '#pxo-2'} ).setTween(pxo2).addTo(controller);
 

@@ -50,8 +50,8 @@ $empty = ( empty( $lumos_options['home_headline'] ) && empty( $lumos_options['ho
 				    </div><!-- end of #logo -->
 
             <div class="row">
-              <div class="col-md-6"><a href="tel:+1-347-292-9877" class="btn btn-block btn-primary">(347) 292-9877</a></div>
-              <div class="col-md-6"><a href="<?php echo home_url('/contact-us/'); ?>" class="btn btn-block btn-primary">Book Online</a></div>
+              <div class="col-lg-6"><a href="tel:+1-347-292-9877" class="btn btn-block btn-primary">(347) 292-9877</a></div>
+              <div class="col-lg-6"><a href="<?php echo home_url('/contact-us/'); ?>" class="btn btn-block btn-primary">Book Online</a></div>
             </div>
         </div>
         <!-- col -->
@@ -140,7 +140,7 @@ $empty = ( empty( $lumos_options['home_headline'] ) && empty( $lumos_options['ho
   <a href="<?php echo home_url('//') ?>">
     <div id="pxo-1" class="container-fluid">
       <div class="row align-items-center">
-        <div class="col-md-6 pl-0">
+        <div class="col-md-6 lg-0">
           <div class="box">
             <p class="text-center">View Our Photo Gallery</p>
           </div>
@@ -164,7 +164,7 @@ $empty = ( empty( $lumos_options['home_headline'] ) && empty( $lumos_options['ho
 	<div class="container">
       <div class="row">
             <div class="col-md-6 wow fadeInLeft" data-wow-duration="2.5s" data-wow-offset="250">
-              <div class="p-abs">
+              <div class="p-abs mb-4 mb-md-0">
                 <img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/doc.jpg" alt="Dr. Shteynberg" />
               </div>
             </div>
@@ -259,66 +259,6 @@ $empty = ( empty( $lumos_options['home_headline'] ) && empty( $lumos_options['ho
       </li>
 
     </ul
-	</div><!-- .container -->
-</section><!-- section -->
-
-<section class="call-to-actions">
-	<div class="container">
-		<div class="row">
-			<div class="cta col-sm-4">
-				<a href="<?php echo home_url('/photo-gallery/'); ?>">
-					<div class="box">
-						<h4>Patient <br/>Reviews</h4>
-            <div class="callout d-flex align-items-center">
-              <p>Get patient information and download forms</p>
-              <div class="hover-arrow">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                  <i class="fa fa-angle-right fa-stack-1x"></i>
-                </span>
-              </div>
-            </div>
-						<img class="w-100 d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/ctas/cta-1.jpg" alt="Patient Reviews" />
-					</div>
-				</a>
-			</div><!-- col -->
-
-			<div class="cta col-sm-4">
-				<a href="<?php echo home_url('//'); ?>">
-					<div class="box">
-						<h4>Patient <br/>Forms</h4>
-            <div class="callout d-flex align-items-center">
-              <p>Read what our patients are saying about us</p>
-              <div class="hover-arrow">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                  <i class="fa fa-angle-right fa-stack-1x"></i>
-                </span>
-              </div>
-            </div>
-						<img class="w-100 d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/ctas/cta-2.jpg" alt="Patient Forms" />
-					</div>
-				</a>
-			</div><!-- col -->
-
-			<div class="cta col-sm-4">
-				<a href="<?php echo home_url('/video-gallery/'); ?>">
-					<div class="box">
-						<h4>Schedule <br/> Consult</h4>
-            <div class="callout d-flex align-items-center">
-              <p>Contact us now to schedule your next appointment</p>
-              <div class="hover-arrow">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                  <i class="fa fa-angle-right fa-stack-1x"></i>
-                </span>
-              </div>
-            </div>
-						<img class="w-100 d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/ctas/cta-3.jpg" alt="Schedule Consult" />
-					</div>
-				</a>
-			</div><!-- col -->
-		</div><!-- row -->
 	</div><!-- .container -->
 </section><!-- section -->
 

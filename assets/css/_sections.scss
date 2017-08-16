@@ -171,6 +171,10 @@ section.cta-gallery a {
   & .just-woman {
     position: relative;
     margin-top: -50%;
+
+    @media screen and (max-width: $sm) {
+      margin-top: 0;
+    }
   }
 
   & .camera {
@@ -239,6 +243,11 @@ section.meet {
     bottom: 0;
     left: 0;
     padding: $bs-padding;
+
+    @media screen and (max-width: $sm) {
+      position: relative;
+      padding: 0;
+    }
   }
 }
 @mixin block {
@@ -273,142 +282,10 @@ section.meet {
     }
   }
 }
-/* Call to Actions ** */
-section.call-to-actions {
-  padding: 3rem 0;
-}
-
-section.call-to-actions .cta a {
-  top: 0;
-  -webkit-box-shadow: 0 0 0 0 rgba(90, 91, 95, 0);
-  box-shadow: 0 0 0 0 rgba(90, 91, 95, 0);
-}
-
-section.call-to-actions .cta,
-section.call-to-actions .cta a,
-section.call-to-actions .cta a h4,
-section.call-to-actions .cta a img {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-section.call-to-actions .cta a,
-section.call-to-actions .cta a .box {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-
-section.call-to-actions .cta a .box {
-  & .callout {
-    position: absolute;
-    z-index: 5;
-    bottom: 0;
-    width: 100%;
-    background: rgba($white,.7);
-
-    & p {
-      font-family: $font-secondary;
-      font-size: 20px;
-      line-height: 1.1;
-      position: relative;
-      margin: 0;
-      padding: 0 0.5rem;
-      color: $dark-grey;
-      @media screen and (max-width: $md ) {
-        font-size: 12px;
-      }
-    }
-
-    & .hover-arrow {
-      padding: 0.33rem;
-      background: $theme-accent-color;
-      @media screen and (max-width: $sm ) {
-        text-align: center;
-        -webkit-box-flex: 1;
-            -ms-flex: 1;
-                flex: 1;
-      }
-
-      .fa-stack i:first-child {
-        color: $white;
-      }
-
-      .fa-stack i:last-child {
-        color: $theme-accent-color;
-      }
-
-      & .fa-stack {
-        @media screen and (max-width: $md ) {
-          font-size: 10px;
-        }
-      }
-    }
-  }
-}
-
-section.call-to-actions .cta a:hover {
-  // -webkit-box-shadow: 0 16px 22px 0 rgba(90, 91, 95, .3);
-  // -moz-box-shadow: 0 16px 22px 0 rgba(90, 91, 95, .3);
-  // box-shadow: 0 16px 22px 0 rgba(90, 91, 95, .3);
-}
-
-section.call-to-actions .cta a .box h4 {
-  font-size: 30px;
-  font-weight: 300;
-  position: absolute;
-  z-index: 3;
-  top: 1rem;
-  left: 1rem;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  letter-spacing: 0;
-  color: $theme-main-color;
-}
-
-section.call-to-actions .cta a .box img {
-  position: relative;
-}
-
-section.call-to-actions .cta a:hover .box img {
-  opacity: 0.6;
-}
-
-%transform {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  /* IE 9 */
-  /* Safari */
-}
-/* Reviews */
-@mixin quotes {
-  &::before {
-    font-family: $font-quaternary;
-    font-size: 80px;
-    position: absolute;
-    z-index: 5;
-    top: -35px;
-    right: 0;
-    left: 0;
-    display: block;
-    width: 70px;
-    height: 70px;
-    margin: 0 auto;
-    content: '"';
-    text-align: center;
-    color: $theme-main-color;
-    background-color: rgba($white,.7);
-    @content;
-  }
-}
 
 section.review {
   position: relative;
-  padding: $section-padding;
+  padding: 4rem 0 8rem 0;
   background: $theme-secondary-color;
 
   & h2 {
@@ -463,24 +340,15 @@ section.review .bx-slider li,
 section.review .bx-wrapper {
   height: auto;
 }
+
 /* Contact ** */
 section.contact {
-  padding: 4rem 0;
-  background: url('img/bg-footer.jpg') no-repeat center center;
-}
-
-section.contact .f-cols {
   padding: 0;
-}
+  background: url('img/bg-footer.jpg') no-repeat center center;
 
-section.contact .contact-info p a,
-section.contact a.hover-box,
-section.contact a.hover-box .box-title,
-section.contact a.hover-box .box-title h4,
-section.contact a.hover-box .box-title h4::after,
-section.contact a.hover-box .map-img img {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  & .contact-info {
+    margin-top: -4rem;
+  }
 }
 
 section.contact .contact-info h3 {

@@ -11,15 +11,12 @@ $lumos_options = lumos_get_options();
 ?>
 
 <section id="px-3" class="contact">
-		<div class="container">
-
+		<div class="container-fluid">
 			<div class="row align-items-center">
-
-				<div class="col-md-6 contact-info">
-
+				<div class="col-md-8 col-lg-6 py-5 mx-auto contact-info bg-primary">
 							<div class="row">
 								<div class="col-12">
-									<h3 class="featured-title">Contact Us</h3>
+									<h3 class="featured-title text-center">Contact Us</h3>
 								</div>
 							</div><!-- row -->
 							<div class="row align-items-center">
@@ -57,11 +54,6 @@ $lumos_options = lumos_get_options();
 							</div>
 						</div>
 				</div><!-- col -->
-
-				<div class="col-md-6 widget">
-					<?php echo do_shortcode('[contact-form-7 id="26" title="Footer"]') ?>
-				</div>
-
 			</div><!-- row -->
 		</div><!-- .container -->
 	</section><!-- end section.contact -->
