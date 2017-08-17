@@ -42,8 +42,8 @@ function ctw_enqueue_scripts_and_styles() {
 		'bootstrap-css'			=> get_template_directory_uri().'/assets/css/bootstrap/css/bootstrap.min.css',
 		'google-fonts'			=> '//fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Quicksand:300,400',
 		'animate'						=> get_template_directory_uri().'/assets/css/animate.css',
-		'font-awesome'			=> get_template_directory_uri().'/css/font-awesome.min.css',
-		'slicknav'					=> get_template_directory_uri().'/css/slicknav.min.css',
+		'font-awesome'			=> get_template_directory_uri().'/assets/css/font-awesome.min.css',
+		'slicknav'					=> get_template_directory_uri().'/assets/css/slicknav.min.css',
 		//'style-sheet'				=> get_template_directory_uri().'/style.min.css',
 		'dev-style-sheet'	=> get_template_directory_uri().'/style.css'
 	);

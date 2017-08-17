@@ -69,7 +69,6 @@ var vendorJSWatchFiles      = './assets/js/vendor/*.js'; // Path to all vendor J
 var customJSWatchFiles      = './assets/js/custom/*.js'; // Path to all custom JS files.
 var projectPHPWatchFiles    = './**/*.php'; // Path to all PHP files.
 
-
 // Browsers you care about for autoprefixing.
 // Browserlist https        ://github.com/ai/browserslist
 const AUTOPREFIXER_BROWSERS = [
@@ -118,6 +117,7 @@ var browserSync  = require('browser-sync').create(); // Reloads browser and inje
 var reload       = browserSync.reload; // For manual browser reload.
 var wpPot        = require('gulp-wp-pot'); // For generating the .pot file.
 var sort         = require('gulp-sort'); // Recommended to prevent unnecessary changes in pot-file.
+var del          = require('del'); // Deletes files and folders.
 
 /**
  * Task: `browser-sync`.
@@ -316,13 +316,18 @@ gulp.task( 'browser-sync', function() {
 // gulp dist
 // Copies the files to the /dist folder for distributon as simple theme
 gulp.task('dist', ['clean-dist'], function() {
-    gulp.src(['**/*','!bower_components','!bower_components/**','!node_modules','!node_modules/**','!src','!src/**','!dist','!dist/**','!dist-product','!dist-product/**','!sass','!sass/**','!readme.txt','!readme.md','!package.json','!gulpfile.js','!CHANGELOG.md','!.travis.yml','!jshintignore', '!codesniffer.ruleset.xml', '*'])
-    .pipe(gulp.dest('dist/'))
+    gulp.src(['**/*','!bower_components','!bower_components/**','!node_modules','!node_modules/**','!src','!src/**','!dist','!dist/**','!dist-product','!dist-product/**','!sass','!sass/**','!readme.txt','!readme.md','!package-lock.json','!package.json','!gulpfile.js','!CHANGELOG.md','!.travis.yml','!jshintignore', '!codesniffer.ruleset.xml', '*', '!vantageps' ])
+    .pipe(gulp.dest('vantageps/'))
 });
 
 // Deleting any file inside the /src folder
 gulp.task('clean-dist', function () {
-  return del(['dist/**/*',]);
+  return del(['vantageps/**/*',]);
+});
+
+// Deleting any file inside the /src folder
+gulp.task('clean-img', function () {
+  return del(['./img/',]);
 });
 
 
