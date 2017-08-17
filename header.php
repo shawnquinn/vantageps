@@ -21,15 +21,14 @@ $lumos_options = lumos_get_options();
   <title>
     <?php wp_title('|', true, 'right');?>
   </title>
-  <link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/img/favicons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri(); ?>/img/favicons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/img/favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="<?php echo get_template_directory_uri(); ?>/img/favicons/apple-touch-icon-76x76.png">
-  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/img/favicons/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/img/favicons/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#333">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/img/favicons/manifest.json">
+  <link rel="mask-icon" href="<?php echo get_template_directory_uri(); ?>/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
+
   <?php wp_head(); ?>
 </head>
 <body
@@ -72,7 +71,7 @@ $lumos_options = lumos_get_options();
 						          </a>
 						        </li>
 						        <li>
-						          <a href="tel:+1-760-324-2660">
+						          <a href="tel:+1-347-292-9877">
 						            <i class="fa fa-phone" aria-hidden="true">
 						            </i>
 						          </a>
@@ -95,33 +94,38 @@ $lumos_options = lumos_get_options();
 
 
 <div id="main">
-  <div class="float-box" hidden>
+
+  <div class="float-box d-none d-md-block">
     <a class="clicker" href="<?php echo home_url(''); ?>">
       <span>Contact Us
       </span>
     </a>
     <div class="row">
-	    	<div class="col col-md-4">
+	    	<div class="col col-6">
 	      <address>
+          <span>Address:</span><br/>
+          185 Montague St, 4th Floor<br/>
+          Brooklyn, NY 11201<br/>
+          Phone: (347) 292-9877
 	      </address>
 	      <a href="<?php echo home_url('/location/'); ?>">
 	        <img class="img-fluid mt-2" src="<?php echo get_template_directory_uri(); ?>/img/map.png" alt="Location" />
 	      </a>
 	    </div>
 	    <!-- end of col-1-3 -->
-	    <div class="col col-md-4">
+	    <div class="col col-6">
 	      <?php echo do_shortcode('[contact-form-7 id="136" title="Contact form 1"]') ?>
 	    </div>
 	    <!-- end of col-1-3 -->
-	    <div class="col col-md-4 links d-flex">
-		  <div id="flex-item" class="w-100 d-block">
-		      <a href="<?php echo home_url(''); ?>">Current Specials
-		      </a>
-		      <a href="<?php echo home_url(''); ?>">Get Directions
-		      </a>
-		      <a href="<?php echo home_url('/photo-gallery/'); ?>">Photo Gallery
-		      </a>
-		  </div><!-- flex-item -->
+	    <div class="col col-md-4 links" hidden>
+  		  <div id="flex-item" class="w-100 d-block">
+  		      <a href="<?php echo home_url(''); ?>">Current Specials
+  		      </a>
+  		      <a href="<?php echo home_url(''); ?>">Get Directions
+  		      </a>
+  		      <a href="<?php echo home_url('/photo-gallery/'); ?>">Photo Gallery
+  		      </a>
+  		  </div><!-- flex-item -->
 	    </div>
 	    <!-- end of col-1-3 -->
     </div><!-- row -->

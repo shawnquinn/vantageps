@@ -47,7 +47,7 @@ $lumos_options = lumos_get_options();
 				<div class="col-12">
 					<h4 class="d-inline">Stay Connected:</h4>
 					<?php
-					echo '<ul class="social-icons text-center">';
+					echo '<ul class="social-icons text-center mt-4 mt-md-0">';
 					if (!empty($lumos_options['facebook_uid'])) 		echo '<li><a target="_blank" class="icon-facebook" href="' . $lumos_options['facebook_uid'] . '">'.'</a></li>';
 					if (!empty($lumos_options['twitter_uid'])) 			echo '<li><a target="_blank" class="icon-twitter" href="' . $lumos_options['twitter_uid'] . '">'.'</a></li>';
 					if (!empty($lumos_options['google_plus_uid'])) 	echo '<li><a target="_blank" class="icon-google-plus" href="' . $lumos_options['google_plus_uid'] . '">'.'</a></li>';
@@ -71,21 +71,21 @@ $lumos_options = lumos_get_options();
         <div class="bottom">
             <div class="container">
 	            <div class="row py-4">
-		            <div id="footer-1" class="col-md-3 my-1 hidden-sm-down">
+		            <div id="footer-1" class="col-md-3 my-1 d-none d-md-block">
 				        <h4>Quick Links</h4>
 				        <nav id="footer-nav">
 		                    <?php wp_nav_menu( array( 'theme_location' => 'footer-nav','menu_class' => 'nav')   ); ?>
 		                </nav>
 			        </div><!-- end of col-md-3 -->
 
-			        <div id="footer-2" class="col-md-3 my-1 hidden-sm-down">
+			        <div id="footer-2" class="col-md-3 my-1 d-none d-md-block">
 				        <h4>Services</h4>
 						<nav id="footer-nav">
 		                    <?php wp_nav_menu( array( 'theme_location' => 'footer-nav-2','menu_class' => 'nav')   ); ?>
 		                </nav>
 			        </div><!-- end of col-md-3 -->
 
-			        <div id="footer-4" class="col-md-3 my-1">
+			        <div id="footer-4" class="col-md-3 my-1 text-center text-md-left">
 				        <h4>Connect</h4>
 				        <?php // First let's check if any of this was set
 
@@ -105,7 +105,7 @@ $lumos_options = lumos_get_options();
 
 			        </div><!-- footer-4 -->
 
-				        <div id="footer-4" class="col-md-3 my-1">
+				        <div id="footer-4" class="col-md-3 my-1 text-center text-md-left">
 									<h4>Contact Us</h4>
 									<div class="row">
 										<div class="col-12">

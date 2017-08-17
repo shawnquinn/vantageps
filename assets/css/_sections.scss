@@ -20,6 +20,7 @@ section.home-content {
   position: relative;
   padding: $section-padding;
   background: $white;
+  overflow: hidden;
 }
 
 section.home-content .container,
@@ -44,6 +45,9 @@ section.home-content #primary h1 {
   color: lighten($theme-main-color, 15%); // $theme-main-color lightened a bit
   @media (max-width: $lg) {
     font-size: 48px;
+  }
+  @media (max-width: $md) {
+    font-size: 34px;
   }
 }
 
@@ -143,6 +147,10 @@ section.cta-gallery {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
   }
+
+  @media screen and (max-width: $sm) {
+    margin: 0;
+  }
 }
 
 section.cta-gallery a {
@@ -158,10 +166,14 @@ section.cta-gallery a {
       font-size: 24px;
       font-weight: 600;
       -webkit-transition: all 0.8s ease;
-      transition: all 0.8s ease;
+      transition: all 0.67s ease;
       letter-spacing: 0;
       text-transform: uppercase;
       color: $white;
+
+      @media screen and (max-width: $sm) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -247,7 +259,7 @@ section.meet {
     bottom: 0;
     left: 0;
     padding: $bs-padding;
-    @media screen and (max-width: $sm) {
+    @media screen and (max-width: $md) {
       position: relative;
       padding: 0;
     }
@@ -355,6 +367,10 @@ section.contact {
     margin-top: -4rem;
     margin-bottom: -4rem;
     background: rgba(#fff, .9);
+
+    @media screen and (max-width: $sm ) {
+      margin: 0;
+    }
   }
 }
 
@@ -422,6 +438,10 @@ section.social {
     color: $white;
     border-radius: 50%;
     background: $theme-main-color;
+    @media (max-width: $sm) {
+      font-size: 16px;
+      padding: 8px;
+    }
 
     &:hover {
       background: $theme-secondary-color;

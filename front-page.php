@@ -73,34 +73,34 @@ $empty = ( empty( $lumos_options['home_headline'] ) && empty( $lumos_options['ho
     <div class="row">
       <div class="col-md-6">
         <div class="row services">
-          <div class="col-md-6 mb-4 wow fadeInUp" data-wow-duration="2s" data-wow-offset="25"><a href="<?php echo home_url('//'); ?>">
+          <div class="col-sm-6 mb-4 wow fadeInUp" data-wow-duration="2s" data-wow-offset="50"><a href="<?php echo home_url('//'); ?>">
             <h3>Body</h3>
             <div class="box-overlay"></div>
-            <img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/services/s-1.jpg" alt="Face">
+            <img class="img-fluid d-block mx-auto w-100" src="<?php echo get_template_directory_uri(); ?>/img/services/s-1.jpg" alt="Face">
             </a>
             </div>
-          <div class="col-md-6 mb-4 wow fadeInUp" data-wow-duration="2s" data-wow-offset="25"><a href="<?php echo home_url('//'); ?>">
+          <div class="col-sm-6 mb-4 wow fadeInUp" data-wow-duration="2s" data-wow-offset="50"><a href="<?php echo home_url('//'); ?>">
             <h3>Breast</h3>
             <div class="box-overlay"></div>
-            <img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/services/s-2.jpg" alt="Breast">
+            <img class="img-fluid d-block mx-auto w-100" src="<?php echo get_template_directory_uri(); ?>/img/services/s-2.jpg" alt="Breast">
             </a>
           </div>
-          <div class="col-md-6 mb-4 wow fadeInUp" data-wow-duration="2s" data-wow-offset="250"><a href="<?php echo home_url('//'); ?>">
+          <div class="col-sm-6 mb-4 wow fadeInUp" data-wow-duration="2s" data-wow-offset="225"><a href="<?php echo home_url('//'); ?>">
             <h3>Body</h3>
             <div class="box-overlay"></div>
-            <img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/services/s-3.jpg" alt="Body">
+            <img class="img-fluid d-block mx-auto w-100" src="<?php echo get_template_directory_uri(); ?>/img/services/s-3.jpg" alt="Body">
             </a>
           </div>
-          <div class="col-md-6 mb-4 wow fadeInUp" data-wow-duration="2s" data-wow-offset="250"><a href="<?php echo home_url('//'); ?>">
+          <div class="col-sm-6 mb-4 wow fadeInUp" data-wow-duration="2s" data-wow-offset="225"><a href="<?php echo home_url('//'); ?>">
             <h3>Non-Invasive</h3>
             <div class="box-overlay"></div>
-            <img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/services/s-4.jpg" alt="Non-Invasive">
+            <img class="img-fluid d-block mx-auto w-100" src="<?php echo get_template_directory_uri(); ?>/img/services/s-4.jpg" alt="Non-Invasive">
             </a>
           </div>
         </div>
         </div>
 
-      <div id="primary" class="col-md-6 wow fadeIn" data-wow-duration="3s" data-wow-offset="15">
+      <div id="primary" class="col-md-6 wow fadeInRight" data-wow-duration="1.75s" data-wow-offset="225">
         <div id="content">
           <?php if (have_posts()) : ?>
           <?php while (have_posts()) : the_post(); ?>
@@ -150,7 +150,7 @@ $empty = ( empty( $lumos_options['home_headline'] ) && empty( $lumos_options['ho
         </div>
       </div>
       <!-- row -->
-      <div class="row justify-content-center">
+      <div class="row justify-content-center d-none d-md-flex">
         <div class="col-4">
           <img class="img-fluid d-block mx-auto camera" src="<?php echo get_template_directory_uri(); ?>/img/camera-woman.png" alt="View Our Photo Gallery" />
         </div>
@@ -163,12 +163,12 @@ $empty = ( empty( $lumos_options['home_headline'] ) && empty( $lumos_options['ho
 <section class="meet">
 	<div class="container">
       <div class="row">
-            <div class="col-md-6 wow fadeInLeft" data-wow-duration="2.5s" data-wow-offset="250">
+            <div class="col-md-6 wow fadeInLeft" data-wow-duration="1.75s" data-wow-offset="250">
               <div class="p-abs mb-4 mb-md-0">
                 <img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/doc.jpg" alt="Dr. Shteynberg" />
               </div>
             </div>
-            <div class="col-md-6 wow fadeInUp" data-wow-duration="2s" data-wow-offset="250">
+            <div class="col-md-6 wow fadeInUp" data-wow-duration="1.75s" data-wow-offset="250">
               <h1 class="featured-title text-center text-md-left">Meet Our Dr. <span>Dr. Aleksandr Shteynberg, MD, FACS</span></h1>
               <p>Ut sagittis varius orci, a efficitur tellus blandit vel. Duis a nibh vel ex pharetra blandit. Aliquam erat volutpat. Ut congue nibh sit amet sapien eleifend viverra. Morbi urna est, luctus eget odio ac, finibus condimentum quam. Nam placerat ultrices commodo. Nullam vel risus vitae dolor posuere cursus. Etiam tempor dui nulla, iaculis ullamcorper lorem pharetra ut. In pulvinar sapien ut dictum gravida. Proin efficitur ligula vitae eros pretium fringilla ut condimentum eros. Sed blandit ullamcorper bibendum. Maecenas sollicitudin, dui non molestie auctor, velit ligula fringilla arcu, vitae ultricies mauris lectus non ipsum.</p>
               <div class="row">
@@ -193,7 +193,7 @@ $empty = ( empty( $lumos_options['home_headline'] ) && empty( $lumos_options['ho
 </section><!-- section -->
 
 <section class="review">
-	<div class="container wow fadeIn" data-wow-duration="2.5s" data-wow-offset="250">
+	<div class="container wow fadeIn" data-wow-duration="2s" data-wow-offset="225">
     <div class="row">
       <div class="col-12">
         <h2 class="featured-title text-center">Testimoials<span>What Our Patients Are Saying</span></h2>

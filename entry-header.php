@@ -27,7 +27,7 @@ $lumos_options = lumos_get_options(); ?>
 	<?php else : ?>
 
 	<?php
-			$content .= '<div class="bg-container" style="background-image: url('.get_template_directory_uri().'/img/bg-review.jpg)"><div class="bg-overlay"><div class="container">';
+			$content .= '<div class="bg-container" style="background-image: url('.get_template_directory_uri().'/img/slider/slider1.jpg)"><div class="bg-overlay"><div class="container">';
 			$content .= '<h1 class="entry-title">';
 			$content .= get_the_title();
 			$content .= '</h1>';
